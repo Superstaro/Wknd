@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weekend Project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body>
+		<div class="container">
+		   <div class="menu">
+			  <a href="#menu" class="box-shadow-menu"></a>
+		   </div>
+		   <div class="digest">
+			  <h2>Digest</h2>
+		   </div>
+		   <div class="search">
+		      <img src="icon.png"> 
+		   </div>    
+        </div>
+
+        <div class="w3-content">
+             <img class="mySlides" src="dominican.jpg" alt="custom_html_banner1" style="width:100%">
+             <div class="bottom-left">Republica Dominicana</div>
+             <img class="mySlides" src="altos.jpg" alt="custom_html_banner2" style="width:100%">
+             <img class="mySlides" src="fet.jpg" alt="custom_html_banner3" style="width:100%">
+             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <br>
+
+        <div class="grid1">
+
+           <div>	
+                <img src="sunset.jpg">
+           </div>
+           <div>        	
+                <img src="golf.jpg">
+           </div>
+
+        </div>
+    
+        <div class="grid2">
+
+            <div id="double-wide">
+                 <img src="jarabacoa.jpg">
+            </div> 
+            <div id="double-high">
+                 <img src="barahona.jpg">
+            </div>
+            <div>
+                 <img src="carnaval.jpg">
+            </div>
+            <div>
+                 <img src="bandera.jpg">
+            </div>
+            
+        </div>
+
+        <div class="grid3">
+
+               <div> 	
+                    <img src="chavon.jpg">
+               </div>
+               <div>        	
+                    <img src="piscina.jpg">
+               </div>
+    
+            </div>
+
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            function plusDivs(n) {
+            showDivs(slideIndex += n);
+  }
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1} if (n < 1) {slideIndex = x.length}for
+            (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+            x[slideIndex-1].style.display = "block"; }
+        </script>
+ 
+
+
+
+	</body>
+</html>
